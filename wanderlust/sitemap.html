@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Wanderlust Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .sitemap-tree {
+            font-family: monospace;
+            line-height: 1.8;
+            margin: 2rem 0;
+        }
+        
+        .sitemap-tree ul {
+            list-style: none;
+            padding-left: 2rem;
+            border-left: 2px solid #e9ecef;
+        }
+        
+        .sitemap-tree li {
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .sitemap-tree li:before {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: 1rem;
+            width: 20px;
+            height: 2px;
+            background: #e9ecef;
+        }
+        
+        .sitemap-tree a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .sitemap-tree a:hover {
+            background-color: #f8f9fa;
+            color: #2980b9;
+        }
+        
+        .page-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-left: 1rem;
+            font-style: italic;
+        }
+        
+        .sitemap-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Wanderlust Travel</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Website Sitemap</h1>
+                <p>Complete navigation structure of Wanderlust Travel website</p>
+            </div>
+        </section>
+
+        <div class="sitemap-container">
+            <h2>Site Structure</h2>
+            
+            <div class="sitemap-stats">
+                <div class="stat-card">
+                    <span class="stat-number">5</span>
+                    <div class="stat-label">Total Pages</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8</span>
+                    <div class="stat-label">Gallery Images</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">6</span>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <div class="stat-label">Responsive</div>
+                </div>
+            </div>
+
+            <div class="sitemap-tree">
+                <ul>
+                    <li>
+                        <a href="index.html">🏠 Homepage (index.html)</a>
+                        <div class="page-description">Main landing page with image slider and welcome content</div>
+                        <ul>
+                            <li>Hero Image Slider (3 slides)</li>
+                            <li>Welcome Section</li>
+                            <li>Features Grid</li>
+                            <li>Quick Links Section</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="destinations.html">🗺️ Destinations (destinations.html)</a>
+                        <div class="page-description">Showcase of popular travel destinations with pricing</div>
+                        <ul>
+                            <li>Swiss Alps, Switzerland</li>
+                            <li>Maldives</li>
+                            <li>Kyoto, Japan</li>
+                            <li>Santorini, Greece</li>
+                            <li>Patagonia, Chile & Argentina</li>
+                            <li>Marrakech, Morocco</li>
+                            <li>Travel Seasons Guide</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="gallery.html">📸 Photo Gallery (gallery.html)</a>
+                        <div class="page-description">Interactive photo gallery with lightbox functionality</div>
+                        <ul>
+                            <li>Mountain Reflections</li>
+                            <li>Tropical Paradise</li>
+                            <li>Cultural Heritage</li>
+                            <li>Ocean Sunset</li>
+                            <li>Forest Adventure</li>
+                            <li>City Lights</li>
+                            <li>Desert Dunes</li>
+                            <li>Northern Lights</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="about.html">ℹ️ About Us (about.html)</a>
+                        <div class="page-description">Company information, team, and values</div>
+                        <ul>
+                            <li>Our Story</li>
+                            <li>Mission & Values</li>
+                            <li>Team Members</li>
+                            <li>Achievements & Awards</li>
+                            <li>Why Choose Us</li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="contact.html">📞 Contact (contact.html)</a>
+                        <div class="page-description">Contact form with validation and business information</div>
+                        <ul>
+                            <li>Contact Information</li>
+                            <li>Contact Form (with JavaScript validation)</li>
+                            <li>Business Hours</li>
+                            <li>Travel Tips Table</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <h3>External Links</h3>
+            <ul class="sitemap-tree">
+                <li><a href="https://www.lonelyplanet.com" target="_blank">🔗 Lonely Planet (Travel Resources)</a></li>
+                <li><a href="https://www.tripadvisor.com" target="_blank">🔗 TripAdvisor (Reviews)</a></li>
+                <li><a href="mailto:info@wanderlusttravel.com">📧 Email: info@wanderlusttravel.com</a></li>
+                <li><a href="mailto:support@wanderlusttravel.com">📧 Email: support@wanderlusttravel.com</a></li>
+            </ul>
+
+            <h3>Technical Features</h3>
+            <ul class="sitemap-tree">
+                <li>📱 Responsive Design (Mobile, Tablet, Desktop)</li>
+                <li>🎨 CSS Grid & Flexbox Layouts</li>
+                <li>⚡ JavaScript Interactivity
+                    <ul>
+                        <li>Image Slider with Auto-advance</li>
+                        <li>Form Validation</li>
+                        <li>Gallery Lightbox</li>
+                        <li>Mobile Navigation</li>
+                    </ul>
+                </li>
+                <li>♿ Accessibility Features
+                    <ul>
+                        <li>Keyboard Navigation</li>
+                        <li>Alt Text for Images</li>
+                        <li>Semantic HTML</li>
+                        <li>Focus Indicators</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>File Structure</h3>
+            <div class="sitemap-tree">
+                <ul>
+                    <li>📄 HTML Files (5 pages)</li>
+                    <li>🎨 style.css (Main stylesheet)</li>
+                    <li>⚡ script.js (JavaScript functionality)</li>
+                    <li>📁 images/ (Image assets)
+                        <ul>
+                            <li>slider1.jpg, slider2.jpg, slider3.jpg</li>
+                            <li>gallery1-large.jpg through gallery8-large.jpg</li>
+                            <li>gallery1-thumb.jpg through gallery8-thumb.jpg</li>
+                            <li>dest1.jpg through dest6.jpg</li>
+                            <li>team1.jpg through team4.jpg</li>
+                            <li>about-team.jpg</li>
+                        </ul>
+                    </li>
+                    <li>📋 README.md (Documentation)</li>
+                    <li>🗺️ sitemap.html (This page)</li>
+                    <li>📐 wireframes.html (Design wireframes)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wanderlust Travel</h3>
+                    <p>123 Adventure Street<br>
+                    Travel City, TC 12345<br>
+                    United States</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: <a href="mailto:info@wanderlusttravel.com">info@wanderlusttravel.com</a><br>
+                    Support: <a href="mailto:support@wanderlusttravel.com">support@wanderlusttravel.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for travel inspiration and updates</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

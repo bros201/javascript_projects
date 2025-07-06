@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery - Wanderlust Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>Wanderlust Travel</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="destinations.html" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link active">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Photo Gallery</h1>
+          <p>
+            Discover the beauty of our featured destinations through stunning
+            photography
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="container">
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <a
+                href="images/gallery1-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Majestic mountain peaks reflected in pristine alpine lake'); return false;"
+              >
+                <img
+                  src="images/gallery1-thumb.jpg"
+                  alt="Majestic mountain peaks reflected in pristine alpine lake"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Mountain Reflections</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery2-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Tropical paradise with turquoise waters and white sand beach'); return false;"
+              >
+                <img
+                  src="images/gallery2-thumb.jpg"
+                  alt="Tropical paradise with turquoise waters and white sand beach"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Tropical Paradise</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery3-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Ancient architecture showcasing historical cultural heritage'); return false;"
+              >
+                <img
+                  src="images/gallery3-thumb.jpg"
+                  alt="Ancient architecture showcasing historical cultural heritage"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Cultural Heritage</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery4-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Vibrant sunset over ocean horizon with dramatic clouds'); return false;"
+              >
+                <img
+                  src="images/gallery4-thumb.jpg"
+                  alt="Vibrant sunset over ocean horizon with dramatic clouds"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Ocean Sunset</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery5-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Dense forest canopy with sunlight filtering through trees'); return false;"
+              >
+                <img
+                  src="images/gallery5-thumb.jpg"
+                  alt="Dense forest canopy with sunlight filtering through trees"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Forest Adventure</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery6-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Bustling city skyline illuminated at night with lights'); return false;"
+              >
+                <img
+                  src="images/gallery6-thumb.jpg"
+                  alt="Bustling city skyline illuminated at night with lights"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">City Lights</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery7-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Desert landscape with golden sand dunes under blue sky'); return false;"
+              >
+                <img
+                  src="images/gallery7-thumb.jpg"
+                  alt="Desert landscape with golden sand dunes under blue sky"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Desert Dunes</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-item">
+              <a
+                href="images/gallery8-large.jpg"
+                class="gallery-link"
+                onclick="openLightbox(this.href, 'Northern lights aurora borealis dancing across starry night sky'); return false;"
+              >
+                <img
+                  src="images/gallery8-thumb.jpg"
+                  alt="Northern lights aurora borealis dancing across starry night sky"
+                  class="gallery-thumbnail"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-text">Northern Lights</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+          <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-image" src="" alt="" />
+          <div id="lightbox-caption"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Wanderlust Travel</h3>
+            <p>
+              New Baneshwor<br />
+              Kathmandu,Nepal
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>
+              Phone:
+              <a href="tel:+9779868123456">9868123456</a>
+              <br />
+              Email:
+              <a href="mailto:info@wanderlusttravel.com"
+                >info@wanderlusttravel.com</a
+              ><br />
+              Support:
+              <a href="mailto:support@wanderlusttravel.com"
+                >support@wanderlusttravel.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Stay connected for travel inspiration and updates</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

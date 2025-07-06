@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust Travel - Explore the World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>Wanderlust Travel</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="destinations.html" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Image Slider Section -->
+      <section class="hero-slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img
+              src="images/slider1.jpg"
+              alt="Beautiful mountain landscape with lake reflection"
+            />
+            <div class="slide-content">
+              <h1>Discover Amazing Destinations</h1>
+              <p>
+                Explore breathtaking landscapes and create unforgettable
+                memories
+              </p>
+              <a href="destinations.html" class="cta-button"
+                >Start Your Journey</a
+              >
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="images/slider2.jpg"
+              alt="Tropical beach with crystal clear water"
+            />
+            <div class="slide-content">
+              <h1>Paradise Awaits</h1>
+              <p>Relax on pristine beaches and enjoy crystal clear waters</p>
+              <a href="destinations.html" class="cta-button">Explore Beaches</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="images/slider3.jpg"
+              alt="Historic city architecture and culture"
+            />
+            <div class="slide-content">
+              <h1>Cultural Adventures</h1>
+              <p>Immerse yourself in rich history and vibrant cultures</p>
+              <a href="destinations.html" class="cta-button"
+                >Discover Culture</a
+              >
+            </div>
+          </div>
+          <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+            &#10094;
+          </button>
+          <button class="slider-btn next-btn" onclick="changeSlide(1)">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- Welcome Section -->
+      <section class="welcome-section">
+        <div class="container">
+          <h2>Welcome to Wanderlust Travel</h2>
+          <p>
+            Your gateway to extraordinary adventures around the globe. We
+            specialize in creating personalized travel experiences that inspire,
+            educate, and transform. From serene mountain retreats to bustling
+            city explorations, we help you discover the world's hidden gems.
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Expert Guidance</h3>
+              <p>
+                Our experienced travel consultants provide personalized
+                recommendations based on your interests and preferences.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Unique Destinations</h3>
+              <p>
+                Discover off-the-beaten-path locations and experience authentic
+                local cultures around the world.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Memorable Experiences</h3>
+              <p>
+                Create lasting memories with carefully curated activities and
+                adventures tailored to your travel style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Links Section -->
+      <section class="quick-links">
+        <div class="container">
+          <h2>Plan Your Next Adventure</h2>
+          <div class="links-grid">
+            <a href="destinations.html" class="link-card">
+              <h3>Popular Destinations</h3>
+              <p>Explore our most sought-after travel destinations</p>
+            </a>
+            <a href="gallery.html" class="link-card">
+              <h3>Photo Gallery</h3>
+              <p>Get inspired by stunning travel photography</p>
+            </a>
+            <a href="contact.html" class="link-card">
+              <h3>Contact Us</h3>
+              <p>Start planning your dream vacation today</p>
+            </a>
+            <a
+              href="https://www.lonelyplanet.com"
+              target="_blank"
+              class="link-card external"
+            >
+              <h3>Travel Resources</h3>
+              <p>External travel guides and tips</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Wanderlust Travel</h3>
+            <p>
+              New Baneshwor<br />
+              Kathmandu,Nepal
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>
+              Phone:
+              <a href="tel:+9779868123456">9868123456</a>
+              <br />
+              Email:
+              <a href="mailto:info@wanderlusttravel.com"
+                >info@wanderlusttravel.com</a
+              ><br />
+              Support:
+              <a href="mailto:support@wanderlusttravel.com"
+                >support@wanderlusttravel.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Stay connected for travel inspiration and updates</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

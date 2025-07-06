@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Wanderlust Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <h2>Wanderlust Travel</h2>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="destinations.html" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <p>
+            Ready to start your next adventure? Get in touch with our travel
+            experts
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-content">
+            <div class="contact-info">
+              <h2>Get In Touch</h2>
+              <p>
+                We're here to help you plan the perfect trip. Whether you have
+                questions about destinations, need travel advice, or want to
+                book a custom package, our team is ready to assist you.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <h3>Office Address</h3>
+                  <p>
+                    NewBaneshwor<br />
+                    Kathmandu,Nepal<br />
+                  </p>
+                </div>
+
+                <div class="contact-item">
+                  <h3>Phone & Email</h3>
+                  <p>
+                    Phone:
+                    <a href="tel:+9779868123456">9868123456</a>
+                    <br />
+                    Email:
+                    <a href="mailto:info@wanderlusttravel.com"
+                      >info@wanderlusttravel.com</a
+                    ><br />
+                    Support:
+                    <a href="mailto:support@wanderlusttravel.com"
+                      >support@wanderlusttravel.com</a
+                    >
+                  </p>
+                </div>
+
+                <div class="contact-item">
+                  <h3>Business Hours</h3>
+                  <p>
+                    Monday - Friday: 9:00 AM - 6:00 PM<br />
+                    Saturday: 10:00 AM - 4:00 PM<br />
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <h2>Send Us a Message</h2>
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                  <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject">
+                    <option value="">Select a topic</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="booking">Booking Request</option>
+                    <option value="support">Customer Support</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    placeholder="Tell us about your travel plans or questions..."
+                  ></textarea>
+                  <span class="error-message" id="messageError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="newsletter" name="newsletter" />
+                    <span class="checkmark"></span>
+                    Subscribe to our newsletter for travel tips and special
+                    offers
+                  </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+
+              <div
+                id="formSuccess"
+                class="success-message"
+                style="display: none"
+              >
+                <h3>Thank you for your message!</h3>
+                <p>We'll get back to you within 24 hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Travel Tips Table -->
+      <section class="travel-tips-section">
+        <div class="container">
+          <h2>Quick Travel Tips</h2>
+          <div class="table-container">
+            <table class="travel-tips-table">
+              <thead>
+                <tr>
+                  <th>Destination Type</th>
+                  <th>Best Season</th>
+                  <th>Average Duration</th>
+                  <th>Budget Range</th>
+                  <th>Special Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">Beach Destinations</td>
+                  <td>Summer (Jun-Aug)</td>
+                  <td>7-10 days</td>
+                  <td>$1,500-$3,000</td>
+                  <td>Peak season, book early</td>
+                </tr>
+                <tr>
+                  <td>Winter (Dec-Feb)</td>
+                  <td>10-14 days</td>
+                  <td>$2,000-$4,000</td>
+                  <td>Escape winter weather</td>
+                </tr>
+                <tr>
+                  <td>Mountain Adventures</td>
+                  <td>Spring/Fall</td>
+                  <td>5-7 days</td>
+                  <td>$1,000-$2,500</td>
+                  <td>Weather dependent</td>
+                </tr>
+                <tr>
+                  <td colspan="2">City Breaks</td>
+                  <td>3-5 days</td>
+                  <td>$800-$2,000</td>
+                  <td>Year-round availability</td>
+                </tr>
+                <tr>
+                  <td>Cultural Tours</td>
+                  <td>Varies by region</td>
+                  <td>10-21 days</td>
+                  <td>$2,500-$6,000</td>
+                  <td>
+                    <div>Group discounts available</div>
+                    <div>Custom itineraries</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Wanderlust Travel</h3>
+            <p>
+              New Baneshwor<br />
+              Kathmandu,Nepal
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>
+              Phone:
+              <a href="tel:+9779868123456">9868123456</a>
+              <br />
+              Email:
+              <a href="mailto:info@wanderlusttravel.com"
+                >info@wanderlusttravel.com</a
+              ><br />
+              Support:
+              <a href="mailto:support@wanderlusttravel.com"
+                >support@wanderlusttravel.com</a
+              >
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Stay connected for travel inspiration and updates</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

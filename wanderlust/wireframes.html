@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Wireframes - Wanderlust Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wireframes-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        
+        .wireframe-section {
+            margin: 3rem 0;
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .wireframe {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            background: #fafafa;
+            font-family: monospace;
+            position: relative;
+        }
+        
+        .wireframe-title {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        
+        .wireframe-box {
+            border: 1px solid #999;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            background: #fff;
+            border-radius: 3px;
+        }
+        
+        .wireframe-header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .wireframe-nav {
+            background: #34495e;
+            color: white;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .wireframe-hero {
+            background: linear-gradient(45deg, #e8e8e8, #f0f0f0);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            border: 2px dashed #999;
+            color: #666;
+            font-size: 1.2rem;
+        }
+        
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .wireframe-card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            text-align: center;
+            background: #f9f9f9;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .wireframe-form {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            background: #f9f9f9;
+        }
+        
+        .wireframe-input {
+            width: 100%;
+            height: 30px;
+            border: 1px solid #999;
+            margin: 0.5rem 0;
+            background: #fff;
+        }
+        
+        .wireframe-textarea {
+            width: 100%;
+            height: 80px;
+            border: 1px solid #999;
+            margin: 0.5rem 0;
+            background: #fff;
+        }
+        
+        .wireframe-button {
+            background: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            margin: 0.5rem 0;
+        }
+        
+        .wireframe-footer {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .device-frame {
+            border: 3px solid #333;
+            border-radius: 15px;
+            padding: 1rem;
+            background: #000;
+            margin: 1rem 0;
+        }
+        
+        .mobile-frame {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .tablet-frame {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .desktop-frame {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .responsive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Wanderlust Travel</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="destinations.html" class="nav-link">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Design Wireframes</h1>
+                <p>Visual mockups and layout structure for Wanderlust Travel website</p>
+            </div>
+        </section>
+
+        <div class="wireframes-container">
+            
+            <!-- Homepage Wireframe -->
+            <div class="wireframe-section">
+                <h2>Homepage Layout (index.html)</h2>
+                <div class="wireframe">
+                    <div class="wireframe-title">Desktop Layout - 1200px max-width</div>
+                    
+                    <div class="wireframe-nav">
+                        <div>LOGO: Wanderlust Travel</div>
+                        <div>NAV: Home | Destinations | Gallery | About | Contact</div>
+                    </div>
+                    
+                    <div class="wireframe-hero">
+                        IMAGE SLIDER (3 slides with navigation)
+                        <br>Hero Content Overlay
+                    </div>
+                    
+                    <div class="wireframe-box">
+                        <h3>Welcome Section</h3>
+                        <p>Introductory text about the company</p>
+                        <div class="wireframe-grid">
+                            <div class="wireframe-card">Feature 1<br>Expert Guidance</div>
+                            <div class="wireframe-card">Feature 2<br>Unique Destinations</div>
+                            <div class="wireframe-card">Feature 3<br>Memorable Experiences</div>
+                        </div>
+                    </div>
+                    
+                    <div class="wireframe-box">
+                        <h3>Quick Links Section</h3>
+                        <div class="wireframe-grid">
+                            <div class="wireframe-card">Destinations</div>
+                            <div class="wireframe-card">Gallery</div>
+                            <div class="wireframe-card">Contact</div>
+                            <div class="wireframe-card">External Link</div>
+                        </div>
+                    </div>
+                    
+                    <div class="wireframe-footer">
+                        FOOTER: Company Info | Contact Details | Copyright
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Wireframe -->
+            <div class="wireframe-section">
+                <h2>Gallery Layout (gallery.html)</h2>
+                <div class="wireframe">
+                    <div class="wireframe-title">Photo Gallery with Lightbox</div>
+                    
+                    <div class="wireframe-nav">
+                        <div>LOGO: Wanderlust Travel</div>
+                        <div>NAV: Home | Destinations | [Gallery] | About | Contact</div>
+                    </div>
+                    
+                    <div class="wireframe-box">
+                        <h3>Page Header</h3>
+                        <p>Photo Gallery - Discover beautiful destinations</p>
+                    </div>
+                    
+                    <div class="wireframe-box">
+                        <h3>Gallery Grid (8 images)</h3>
+                        <div class="wireframe-grid">
+                            <div class="wireframe-card">Thumbnail 1<br>Mountain Reflections</div>
+                            <div class="wireframe-card">Thumbnail 2<br>Tropical Paradise</div>
+                            <div class="wireframe-card">Thumbnail 3<br>Cultural Heritage</div>
+                            <div class="wireframe-card">Thumbnail 4<br>Ocean Sunset</div>
+                            <div class="wireframe-card">Thumbnail 5<br>Forest Adventure</div>
+                            <div class="wireframe-card">Thumbnail 6<br>City Lights</div>
+                            <div class="wireframe-card">Thumbnail 7<br>Desert Dunes</div>
+                            <div class="wireframe-card">Thumbnail 8<br>Northern Lights</div>
+                        </div>
+                        <p><em>Click thumbnails to open lightbox with full-size images</em></p>
+                    </div>
+                    
+                    <div class="wireframe-footer">
+                        FOOTER: Company Info | Contact Details | Copyright
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Wireframe -->
+            <div class="wireframe-section">
+                <h2>Contact Page Layout (contact.html)</h2>
+                <div class="wireframe">
+                    <div class="wireframe-title">Contact Form with Validation</div>
+                    
+                    <div class="wireframe-nav">
+                        <div>LOGO: Wanderlust Travel</div>
+                        <div>NAV: Home | Destinations | Gallery | About | [Contact]</div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="wireframe-box">
+                            <h3>Contact Information</h3>
+                            <p>Office Address<br>123 Adventure Street<br>Travel City, TC 12345</p>
+                            <p>Phone & Email<br>(555) 123-4567<br>info@wanderlusttravel.com</p>
+                            <p>Business Hours<br>Mon-Fri: 9AM-6PM<br>Sat: 10AM-4PM</p>
+                        </div>
+                        
+                        <div class="wireframe-form">
+                            <h3>Send Us a Message</h3>
+                            <div class="wireframe-input">Name * (required)</div>
+                            <div class="wireframe-input">Email * (required)</div>
+                            <div class="wireframe-input">Phone (optional)</div>
+                            <div class="wireframe-input">Subject (dropdown)</div>
+                            <div class="wireframe-textarea">Message * (required)</div>
+                            <div>☐ Subscribe to newsletter</div>
+                            <div class="wireframe-button">Send Message</div>
+                            <p><em>JavaScript validation for all required fields</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="wireframe-box">
+                        <h3>Travel Tips Table</h3>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr style="background: #3498db; color: white;">
+                                <th style="border: 1px solid #ddd; padding: 0.5rem;">Destination Type</th>
+                                <th style="border: 1px solid #ddd; padding: 0.5rem;">Best Season</th>
+                                <th style="border: 1px solid #ddd; padding: 0.5rem;">Duration</th>
+                                <th style="border: 1px solid #ddd; padding: 0.5rem;">Budget</th>
+                                <th style="border: 1px solid #ddd; padding: 0.5rem;">Notes</th>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;" rowspan="2">Beach Destinations</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">Summer</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">7-10 days</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">$1,500-$3,000</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">Peak season</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">Winter</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">10-14 days</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">$2,000-$4,000</td>
+                                <td style="border: 1px solid #ddd; padding: 0.5rem;">Escape winter</td>
+                            </tr>
+                        </table>
+                        <p><em>Table demonstrates colspan, rowspan, and nested structure</em></p>
+                    </div>
+                    
+                    <div class="wireframe-footer">
+                        FOOTER: Company Info | Contact Details | Copyright
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsive Design Wireframes -->
+            <div class="wireframe-section">
+                <h2>Responsive Design Breakpoints</h2>
+                
+                <div class="responsive-grid">
+                    <div>
+                        <h3>Mobile (≤480px)</h3>
+                        <div class="device-frame mobile-frame">
+                            <div class="wireframe" style="background: #fff; border: none; padding: 0.5rem;">
+                                <div style="background: #2c3e50; color: white; padding: 0.5rem; display: flex; justify-content: space-between;">
+                                    <div>Logo</div>
+                                    <div>☰</div>
+                                </div>
+                                <div style="background: #f0f0f0; padding: 1rem; text-align: center; margin: 0.5rem 0;">
+                                    Hero Image<br>Stacked Content
+                                </div>
+                                <div style="background: #f9f9f9; padding: 0.5rem; margin: 0.25rem 0;">Feature 1</div>
+                                <div style="background: #f9f9f9; padding: 0.5rem; margin: 0.25rem 0;">Feature 2</div>
+                                <div style="background: #f9f9f9; padding: 0.5rem; margin: 0.25rem 0;">Feature 3</div>
+                                <div style="background: #2c3e50; color: white; padding: 0.5rem; text-align: center; margin-top: 1rem;">Footer</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Tablet (≤768px)</h3>
+                        <div class="device-frame tablet-frame">
+                            <div class="wireframe" style="background: #fff; border: none; padding: 0.5rem;">
+                                <div style="background: #2c3e50; color: white; padding: 0.5rem; display: flex; justify-content: space-between;">
+                                    <div>Wanderlust Travel</div>
+                                    <div>Home | Destinations | Gallery | About | Contact</div>
+                                </div>
+                                <div style="background: #f0f0f0; padding: 2rem; text-align: center; margin: 0.5rem 0;">
+                                    Hero Slider<br>Responsive Images
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.5rem 0;">
+                                    <div style="background: #f9f9f9; padding: 1rem; text-align: center;">Feature 1</div>
+                                    <div style="background: #f9f9f9; padding: 1rem; text-align: center;">Feature 2</div>
+                                </div>
+                                <div style="background: #f9f9f9; padding: 1rem; text-align: center; margin: 0.5rem 0;">Feature 3</div>
+                                <div style="background: #2c3e50; color: white; padding: 0.5rem; text-align: center; margin-top: 1rem;">Footer</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Desktop (≥1200px)</h3>
+                        <div class="device-frame desktop-frame">
+                            <div class="wireframe" style="background: #fff; border: none; padding: 0.5rem;">
+                                <div style="background: #2c3e50; color: white; padding: 0.5rem; display: flex; justify-content: space-between;">
+                                    <div>Wanderlust Travel</div>
+                                    <div>Home | Destinations | Gallery | About | Contact</div>
+                                </div>
+                                <div style="background: #f0f0f0; padding: 3rem; text-align: center; margin: 0.5rem 0;">
+                                    Full-width Hero Slider<br>Maximum 1200px container
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin: 0.5rem 0;">
+                                    <div style="background: #f9f9f9; padding: 1rem; text-align: center;">Expert Guidance</div>
+                                    <div style="background: #f9f9f9; padding: 1rem; text-align: center;">Unique Destinations</div>
+                                    <div style="background: #f9f9f9; padding: 1rem; text-align: center;">Memorable Experiences</div>
+                                </div>
+                                <div style="background: #2c3e50; color: white; padding: 1rem; text-align: center; margin-top: 1rem;">Footer with 3-column layout</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design System -->
+            <div class="wireframe-section">
+                <h2>Design System & Components</h2>
+                
+                <div class="wireframe-box">
+                    <h3>Color Palette</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                        <div style="background: #3498db; color: white; padding: 1rem; text-align: center; border-radius: 5px;">
+                            Primary Blue<br>#3498db
+                        </div>
+                        <div style="background: #2c3e50; color: white; padding: 1rem; text-align: center; border-radius: 5px;">
+                            Dark Blue<br>#2c3e50
+                        </div>
+                        <div style="background: #e74c3c; color: white; padding: 1rem; text-align: center; border-radius: 5px;">
+                            Accent Red<br>#e74c3c
+                        </div>
+                        <div style="background: #f8f9fa; color: #333; padding: 1rem; text-align: center; border-radius: 5px; border: 1px solid #ddd;">
+                            Light Gray<br>#f8f9fa
+                        </div>
+                        <div style="background: #ffffff; color: #333; padding: 1rem; text-align: center; border-radius: 5px; border: 1px solid #ddd;">
+                            White<br>#ffffff
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wireframe-box">
+                    <h3>Typography Scale</h3>
+                    <div style="font-family: 'Segoe UI', sans-serif;">
+                        <h1 style="font-size: 2.5rem; margin: 0.5rem 0;">H1 - Main Headings (2.5rem)</h1>
+                        <h2 style="font-size: 2rem; margin: 0.5rem 0;">H2 - Section Headings (2rem)</h2>
+                        <h3 style="font-size: 1.5rem; margin: 0.5rem 0;">H3 - Subsection Headings (1.5rem)</h3>
+                        <p style="font-size: 1rem; margin: 0.5rem 0;">Body Text - Regular content (1rem)</p>
+                        <small style="font-size: 0.9rem;">Small Text - Captions and notes (0.9rem)</small>
+                    </div>
+                </div>
+                
+                <div class="wireframe-box">
+                    <h3>Interactive Components</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                        <div>
+                            <h4>Buttons</h4>
+                            <div class="wireframe-button" style="margin: 0.25rem 0;">Primary Button</div>
+                            <div style="background: transparent; border: 2px solid #3498db; color: #3498db; padding: 0.5rem 1rem; border-radius: 3px; margin: 0.25rem 0;">Secondary Button</div>
+                        </div>
+                        <div>
+                            <h4>Form Elements</h4>
+                            <div class="wireframe-input" style="margin: 0.25rem 0;">Text Input</div>
+                            <div class="wireframe-textarea" style="margin: 0.25rem 0; height: 60px;">Textarea</div>
+                        </div>
+                        <div>
+                            <h4>Navigation</h4>
+                            <div style="background: #2c3e50; color: white; padding: 0.5rem; border-radius: 3px;">Navbar with Logo + Links</div>
+                            <div style="background: #34495e; color: white; padding: 0.25rem; border-radius: 3px; margin-top: 0.25rem;">Mobile Menu Toggle</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Specifications -->
+            <div class="wireframe-section">
+                <h2>Technical Specifications</h2>
+                
+                <div class="wireframe-box">
+                    <h3>Layout Constraints</h3>
+                    <ul>
+                        <li><strong>Maximum Width:</strong> 1200px (within 960px-1320px requirement)</li>
+                        <li><strong>Container Padding:</strong> 20px on all sides</li>
+                        <li><strong>Grid System:</strong> CSS Grid and Flexbox</li>
+                        <li><strong>Breakpoints:</strong> 768px (tablet), 480px (mobile)</li>
+                        <li><strong>Font Stack:</strong> 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</li>
+                    </ul>
+                </div>
+                
+                <div class="wireframe-box">
+                    <h3>Interactive Features</h3>
+                    <ul>
+                        <li><strong>Image Slider:</strong> Auto-advance every 5 seconds, manual navigation</li>
+                        <li><strong>Gallery Lightbox:</strong> Click thumbnails to view full-size images</li>
+                        <li><strong>Form Validation:</strong> Real-time JavaScript validation</li>
+                        <li><strong>Mobile Navigation:</strong> Hamburger menu for mobile devices</li>
+                        <li><strong>Smooth Scrolling:</strong> CSS scroll-behavior and JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="wireframe-box">
+                    <h3>Accessibility Features</h3>
+                    <ul>
+                        <li><strong>Alt Text:</strong> All images have descriptive alt attributes</li>
+                        <li><strong>Keyboard Navigation:</strong> Tab order and focus indicators</li>
+                        <li><strong>Semantic HTML:</strong> Proper heading hierarchy and landmarks</li>
+                        <li><strong>Color Contrast:</strong> WCAG AA compliant contrast ratios</li>
+                        <li><strong>Screen Reader Support:</strong> ARIA labels where needed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wanderlust Travel</h3>
+                    <p>123 Adventure Street<br>
+                    Travel City, TC 12345<br>
+                    United States</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: <a href="mailto:info@wanderlusttravel.com">info@wanderlusttravel.com</a><br>
+                    Support: <a href="mailto:support@wanderlusttravel.com">support@wanderlusttravel.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected for travel inspiration and updates</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
