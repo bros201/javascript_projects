@@ -129,6 +129,6 @@ This project is created for educational purposes as part of an IT assessment. Fe
 For questions about this project:
 
 - Email: info@wanderlusttravel.com
-- Website: [Live Demo]()
+
 
 **Built with ❤️ for IT Assessment 2024**
